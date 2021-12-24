@@ -1,0 +1,12 @@
+zad1
+SELECT informacja, wart_min, wart_max FROM bmi;
+
+zad2
+INSERT INTO 'wynik'('id', 'bmi_id', 'data_pomiaru', 'wynik') VALUES (NULL, 3, '2020-05-10', 27);
+
+zad3
+SELECT wynik, data_pomiaru FROM wynik JOIN bmi
+ON wynik.bmi_id = bmi.id;
+
+zad4
+SELECT wart_min, wart_max FROM bmi WHERE informacja LIKE 'nadwaga';
